@@ -1,5 +1,10 @@
 # Title
-This is for a final project of CS162
+
+### Items
+[Tools](https://github.com/kenstratton/cs162_final/blob/main/README.md#tools)</br>
+[Overview](https://github.com/kenstratton/cs162_final/blob/main/README.md#overview)</br>
+[Project Requirements](https://github.com/kenstratton/cs162_final/blob/main/README.md#project-requirements)</br>
+[Project Requirements](https://github.com/kenstratton/cs162_final/blob/main/README.md#variables-conditionals-loops-and-collections)</br>
 
 ## Tools:
     python 3.10.0
