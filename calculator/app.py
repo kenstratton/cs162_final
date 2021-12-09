@@ -31,7 +31,6 @@ class Application(tk.Tk):
     def get_widget(self, evnt):
         wg = evnt.widget
         user_input = wg["text"]
-        print(user_input)
         self.process_input(user_input)
 
     def process_input(self, user_input):

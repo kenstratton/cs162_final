@@ -117,7 +117,7 @@ class Frame1(tk.Frame):
     def add_input(self, val):
         # When C is pushed
         if val == "C":
-            self.add_display_text("")
+            self.set_display_text("")
         # When x is pushed
         elif val == "x":
             self.add_display_text("*")
