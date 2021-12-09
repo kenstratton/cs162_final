@@ -1,10 +1,12 @@
+# Generic Exception
 class Error(Exception):
     def __init__(self):
         super().__init__()
 
-    def warning(self, lbl1):
-        return "Error"
+    def warning(self):
+        return "Error", "Something went wrong."
 
+# When a user tries to divide by 0 
 class ZeroDivisionError(Error):
     def __init__(self):
         super().__init__()
@@ -12,28 +14,19 @@ class ZeroDivisionError(Error):
     def warning(self):
         return "Error", "Cannot be devided by 0."
 
-class OperandEndError(Error):
-    def __init__(self):
-        super().__init__()
 
-    def warning(self):
-        return "Error", "Cannot be ended with an operand."
-
+# Check if user input has errors 
 class ErrorHandler:
-    def evaluate_division(self, text):
+    def check_error(self,text):
+        if "/0" in text:
+            raise ZeroDivisionError()
+        eval(text)
+
+    def validate_input(self, text):
         try:
-            if "/0" in text:
-                raise ZeroDivisionError()
-            else:
-                return None
+            self.check_error(text)
+            return True
         except ZeroDivisionError as e:
             return e.warning()
-
-    def evaluate_operand(self, text):
-        try:
-            if text[-1] in ["+", "-", "*", "/"]:
-                raise OperandEndError()
-            else:
-                return None
-        except OperandEndError as e:
-            return e.warning()
+        except:
+            return Error().warning()
