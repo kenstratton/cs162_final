@@ -43,7 +43,7 @@
 ・Generic Exception -> Error</br>
 ・Sub Exception -> ZeroDivisionError</br>
 ・ZeroDivisionError overides *warning()* of Error and rewrites a return value.</br>
-・ErrorHandler holds two methods to validate and raise errors when wrong an input comes.
+・ErrorHandler holds two methods to validate and raise errors when a wrong input comes.
 
 <img width="602" alt="Screen Shot 2021-12-10 at 2 26 50" src="https://user-images.githubusercontent.com/77530003/145445848-fb6b0ba0-172d-4dde-b86c-1f60f811dabd.png">
 
