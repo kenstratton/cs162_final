@@ -9,8 +9,8 @@
 ### ▼GUI Design
 <img width="200" alt="Screen Shot 2021-12-10 at 2 19 08" src="https://user-images.githubusercontent.com/77530003/145444727-3215dbb1-5e41-47eb-8fa7-66ae44ee25af.png">
 
-### ▼Design Tree
-・Application class includes and manipulate Frame1, Frame2, LabelOutput, LabelInput, Calculator, and ErrorHandler.</br>
+### ▼Object Tree
+・Application class includes and manipulates Frame1, Frame2, LabelOutput, LabelInput, Calculator, and ErrorHandler.</br>
 ・The basic Exception is Error, and ZeroDivisionError inherits Error and overrides its method.
 
 <img width="400" alt="Screen Shot 2021-12-10 at 3 25 50" src="https://user-images.githubusercontent.com/77530003/145454171-39eae5e2-6ef6-4420-a8f5-2539d6dc8636.png">
